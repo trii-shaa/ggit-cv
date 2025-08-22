@@ -86,12 +86,14 @@ body{
 section:nth-child(2){
     display:flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
+    padding:100px;
+    gap:20px;
 }
 section:nth-child(2) img{
     width: 500px;
     height: auto;
-    padding: 30px 0;
+    padding:0;
 }
 section:nth-child(2) div{
     display: flex;
@@ -105,8 +107,8 @@ section:nth-child(2) h2{
     padding: 20px;
     font-style: italic;
     border: 2.5px solid black;
-    border-radius: 60px;
-    width: 250px;
+    border-radius: 100px;
+    width: fit-content;
     text-align: center;
 }
 section:nth-child(2) p{
@@ -117,5 +119,106 @@ section:nth-child(2) p{
 }
 section:nth-child(2) span{
     color: #a16ee4;
+}
+section:nth-child(2) hr{
+    border: 1px solid black;
+    margin: 10px 0;
+}
+section:nth-child(2) ul{
+    display:flex;
+    flex-direction: column;;
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+section:nth-child(2) li{
+    font-family:'funnel Display', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding:0px 16px;
+    width:fit-content;
+    height: 80px;
+}
+section:nth-child(2) li img{
+    width: 50px;
+    height:auto;
+    align-items: center;
+}
 
+/*END OF SECTION1*/
+
+/*SECTION2*/
+section:nth-child(3){
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 30px 0;
+}
+.edu {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    max-width: 500px;
+}
+.edu h3{
+    font-family: 'funnel Display', sans-serif;
+    font-size: 35px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 60px;
+    background-color: #9FAFFF;
+    width: fit-content;
+    text-align: center;
+}
+.edu li{
+    list-style:none;
+    font-family: 'funnel Display', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    color:#a16ee4;
+}
+.edu p{
+    font-family: 'funnel Display', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    text-align: justify;
+}
+.edu span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 10px;
+}
+.skills h3{
+    font-family: 'funnel Display', sans-serif;
+    font-size: 35px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 60px;
+    background-color: #FDFFB6;
+    width: fit-content;
+    text-align: center;
+    margin:0;
+}
+.skills ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+.skills li{
+    font-family: 'funnel Display', sans-serif;
+    font-size: 25px;
+    padding: 10px 20px;
+    color:#000000;
+    border-radius: 25px;
+    border: 1px solid #000000;
 }
