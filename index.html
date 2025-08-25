@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patricia</title>
     <link rel="stylesheet" href="style.css">
-    <head>
-
     </head>
     <body>
         <!--Header-->
@@ -16,7 +14,7 @@
             <ul> 
                 <li id="logo"> <img src="img/icon.png" alt="Logo"></li>
                 <li><a href="index.html" class="menu">Home</a></li>
-                <li><a href="Index.html" class="menu">Blog</a></li> 
+                <li><a href="index.html" class="menu">Blog</a></li> 
                 <li><a href="index.html" class="menu">Portofolio</a></li>
                 <li><a href="index.html" class="menu">About</a></li>
             </ul>
@@ -40,9 +38,9 @@
             <br>
             <hr>
             <ul>
-                <li><img src="img/git-icon.png">trii-shaa</li>
-                <li><img src="img/phone-icon.png">060071522</li>
-                <li><img src="img/mail-icon.png">trishawx008@gmail.com</li>
+                <li><img src="img/git-icon.png" alt="github-icon">trii-shaa</li>
+                <li><img src="img/phone-icon.png" alt="phone-icon">060071522</li>
+                <li><img src="img/mail-icon.png" alt="gmail-icon">trishawx008@gmail.com</li>
             </ul>
         </div>
         </section>
@@ -54,10 +52,10 @@
                 <h3>Education</h3>
                 <br>
                 <ul> 
-                    <li>2024-Present</li>
-                    <p><span>Centrul de Excelență în Informatică și Tehnologii Informaționale</span> <br> Specialty: Programarea și testarea produselor program</p>
-                    <li>2015-2024</li>
-                    <p><span>Insitiția Publică Gimnaziul Rădeni</span> <br> Priamry school: 1st-4th grade. Middle school: 5th-9th grade</p>
+                    <li><span class="titlu">2024-Present</span></li>
+                    <li><span>Centrul de Excelență în Informatică și Tehnologii Informaționale</span> <br> Specialty: Programarea și testarea produselor program</li>
+                    <li><span class="titlu">2015-2024</span></li>
+                    <li><span>Insitiția Publică Gimnaziul Rădeni</span> <br> Priamry school: 1st-4th grade. Middle school: 5th-9th grade</li>
                 </ul>
             </div>
             <div class="skills-languages">
@@ -108,10 +106,40 @@
                 <p><span>GirlsGoIT SummerCamp</span> - This was one achievement for me, because i always thought I didn't know enought to belong in such a camp, yet I proved myself wrong. I learnt the basics of HTML and CSS in 5 days, then completed a project within 2 days of hardwork. It was wonderful experience, I was surrounded by amazing mentors, and inovative participants. This 10-day SummerCamp thought me many things, collaboration, hardworking and always think outside the box to achieve your goals.</p>
                     </div>
             </div>
-            </ul>
         </div>
         </section>
         <!--End of Experiences-->
+
+        <!--Contact me form-->
+        <section class="contactme">
+            <h3>Contact me</h3>
+            <form id="contact-form" onsubmit="getFormValue(event)">
+            First name: <input type="text" id="first-name" placeholder="First Name">
+                <br>
+            Last name: <input type="text" id="last-name" placeholder="Last Name">
+                <br>
+            Email: <input type="email" id="email" placeholder="Email">
+                <br>
+            Message: <textarea id="message" placeholder="Your Message"></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <script>
+            function getFormValue(e){
+                e.preventDefault();
+                const firstName = document.getElementById("first-name").value;
+                const lastName = document.getElementById("last-name").value;
+                const email = document.getElementById("email").value;
+                const message = document.getElementById("message").value;
+                console.log("First Name: " + firstName);
+                console.log("Last Name: " + lastName);
+                console.log("Email: " + email);
+                console.log("Message: " + message);
+                alert("Thank you " + firstName + " " + lastName + " for reaching out! I will get back to you at " + email + " soon.");
+            }
+        </script>
+        <!--End of contact me form-->
 
         <!--Footer-->
         <footer>
