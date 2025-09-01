@@ -109,7 +109,8 @@ section:nth-child(2){
     gap:20px;
 }
 section:nth-child(2) img{
-    width: 500px;
+    max-width: 500px;
+    width: 200%;
     height: auto;
     padding:0;
 }
